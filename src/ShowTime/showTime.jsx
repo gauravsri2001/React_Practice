@@ -16,24 +16,3 @@ const showTime = () => {
     ); 
 };
 export default showTime;
-
-// import React, { useState } from "react";
-
-// const ShowTime = () => {
-// //   const [cTime, setCTime] = useState(new Date().toLocaleTimeString());
-
-// //   const updateTime = () => {
-// //     const newTime = new Date().toLocaleTimeString();
-// //     setCTime(newTime);
-// return (
-//     <>
-//       <h1>nef</h1>
-//       <button >Click me</button>
-//     </>
-//   );
-//   };
-
- 
-// //};
-
-// export default ShowTime;
