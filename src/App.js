@@ -1,5 +1,5 @@
 import UseSate_P from "./UseState/UseState_P";
-import showTime from "./ShowTime/showTime";
+import showTime from "./ShowTime/ShowTime";
 
 const App = () => {
   return (
