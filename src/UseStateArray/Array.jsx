@@ -25,7 +25,6 @@ const Array = () => {
         {
             myArray.map((elements) => <h1 key={elements.id}> Name: {elements.Name}, Age: {elements.Age}</h1>)
         }
-        
         <button onClick={clearArray}>Clear</button>
 
         </>
