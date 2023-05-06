@@ -1,18 +1,4 @@
-// import React from "react";
-// const Login = () =>{
-//     return(
-//         <>
-//         <form action="">
-//             <div>
-//                 <label htmlFor="email">Email</label>
-//                 <input type="text" name="email" id ="email" />
-//             </div>
 
-//         </form>
-//         </>
-//     );
-// };
-// export default Login;
 import React, { useState } from 'react';
 
 function Login() {
