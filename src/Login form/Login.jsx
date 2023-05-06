@@ -9,17 +9,14 @@ const Login = () => {
   const submitForm = (e) => {
     e.preventDefault();
 
-    const newEntry = {email: email, password: password};
+    const newEntry = {id: new Date().getTime().toString(), email, password};
     setAllEntry([...allEntry, newEntry]);
     console.log(allEntry)
+
+    //this makes the email and password field empty after the submission
+    setEmail("");
+    setAllEntry("");
   }
-
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   console.log('Username:', username);
-  //   console.log('Password:', password);
-  //   // Perform login authentication
-
   return (
     <>
 <form action='' onSubmit={submitForm}>
@@ -56,10 +53,11 @@ value={email}
 <div>
   {
     allEntry.map((curElem) =>{
+      const{id, email, password} = curElem;
 return(
-  <div> 
-  <p>{curElem.email}</p>
-  <p>{curElem.password}</p>
+  <div key={curElem.id}> 
+  <p>{email}</p>
+  <p>{password}</p>
   </div>
 )
     })
@@ -69,6 +67,4 @@ return(
     
   );
   };
-
-
 export default Login;
