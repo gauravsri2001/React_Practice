@@ -4,8 +4,20 @@ const UseEffect = () =>{
     const [count, setCount] = useState(0);
 
     //shows the count on the title
+    // useEffect(() =>{
+    //     document.title = `Count(${count})`
+    // });
+
+    //using conditions
+    //Conditions can only be used inside hooks it can't be used outside
     useEffect(() =>{
-        document.title = `Count(${count})`
+        if(count >=1){
+            document.title = `Chats{${count}}`
+        }
+        else{
+            document.title = `Chats`
+        }
+        
     });
     return(
         <>
