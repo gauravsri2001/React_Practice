@@ -6,7 +6,8 @@
 // import Todo from "./Todo/Todo"
 //import Login from "./Login form/Login";
 import "./App.css";
-import UseEffect from "./UseEffect_hook/UseEffect";
+import CleanUpFunction from "./UseEffect_hook/CleanUpFunction";
+//import UseEffect from "./UseEffect_hook/UseEffect";
 const App = () => {
   return (
     <>
@@ -17,7 +18,8 @@ const App = () => {
       {/* <HandlingObjects /> */}
       {/* <Todo /> */}
       {/* <Login></Login> */}
-      <UseEffect />
+      {/* <UseEffect /> */}
+      <CleanUpFunction />
     </>
   );
 };
