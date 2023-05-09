@@ -6,7 +6,8 @@
 // import Todo from "./Todo/Todo"
 //import Login from "./Login form/Login";
 import "./App.css";
-import CleanUpFunction from "./UseEffect_hook/CleanUpFunction";
+import CallingApi from "./UseEffect_hook/CallingApi";
+//import CleanUpFunction from "./UseEffect_hook/CleanUpFunction";
 //import UseEffect from "./UseEffect_hook/UseEffect";
 const App = () => {
   return (
@@ -19,7 +20,8 @@ const App = () => {
       {/* <Todo /> */}
       {/* <Login></Login> */}
       {/* <UseEffect /> */}
-      <CleanUpFunction />
+      {/* <CleanUpFunction /> */}
+      <CallingApi />
     </>
   );
 };
