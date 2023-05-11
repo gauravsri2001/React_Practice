@@ -19,7 +19,6 @@ const UseEffectAPI= () =>{
                                     <div className="d-flex flex-column">
                                         <span className="rating">Rating</span> <span className="number3">8.9</span> </div>
                                     </div>
-                                      
                                 </div>
                         </div>
                 </div>
