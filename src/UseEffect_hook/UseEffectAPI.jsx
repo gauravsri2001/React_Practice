@@ -1,18 +1,39 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 const UseEffectAPI= () =>{
+
+    const[users, setUsers] = useState([]);
+
+    
+    const getUsers = async() =>{
+        const getResponce = await fetch('https://api.github.com/users');
+        setUsers(await getResponce.json());
+        // const data = await getResponce.json();
+        // console.log(data);
+    }
+
+    useEffect (() =>{
+        getUsers();
+    }, []);
+
     return(
         <>
         <h1>List of Git Hub users</h1>
 
-        
-        
-        <div className="col-10 col-md-4 mt-5" >
+        <div>
+            <div>
+            {
+                users.map((curElem) => {
+                    return (
+                        <>
+                        <div key={curElem.id}>
+
+                        <div className="col-10 col-md-4 mt-5" >
             <div className="card p-2">
                 <div className="d-flex align-items-center">
-                    <div className="image"> <img src="" className="rounded" width="155" /> </div>
+                    <div className="image"> <img src={curElem.avatar_url} className="rounded" width="155" /> </div>
                         <div className="ml-3 w-100">
-                        <h4 className="mb-0 mt-0 textLeft"> </h4>
-                        {/* <span className="text-left">{type }</span> */}
+                        <h4 className="mb-0 mt-0 textLeft"> {curElem.login} </h4>
+                        <span className="text-left">{curElem.title }</span>
                             <div className="p-2 mt-2 bg-primary d-flex justify-content-between rounded text-white stats">
                                 <div className="d-flex flex-column">
                                 <span className="articles">Articles</span> <span className="number1">38</span> </div>
@@ -25,6 +46,25 @@ const UseEffectAPI= () =>{
                         </div>
                 </div>
         </div>
+
+                        </div>
+
+                        
+
+                        </>
+
+                        
+
+                        
+                    );
+                })
+                }
+            </div>
+        </div>
+
+     
+        
+        
         
 
         </>
