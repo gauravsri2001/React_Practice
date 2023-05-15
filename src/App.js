@@ -7,9 +7,10 @@
 //import Login from "./Login form/Login";
 import "./App.css";
 //import CallingApi from "./UseEffect_hook/CallingApi";
-import UseEffectAPI from "./UseEffect_hook/UseEffectAPI";
+//import UseEffectAPI from "./UseEffect_hook/UseEffectAPI";
 //import CleanUpFunction from "./UseEffect_hook/CleanUpFunction";
 //import UseEffect from "./UseEffect_hook/UseEffect";
+import Form from "./UseEffect_hook/Controlled_and_Uncontrolled/form";
 const App = () => {
   return (
     <>
@@ -23,7 +24,8 @@ const App = () => {
       {/* <UseEffect /> */}
       {/* <CleanUpFunction /> */}
       {/* <CallingApi /> */}
-      <UseEffectAPI />
+      {/* <UseEffectAPI /> */}
+      <Form />
     </>
   );
 };
